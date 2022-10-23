@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightskyblue;
+    user-select: none;
+}
+
+.asd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gomb {
+    width: 300px;
+    height: 300px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gomb > p,
+#handbreak > p {
+    font-size: 5em;
+    width: 100px;
+    height: 100px;
+}
+
+.special > p {
+    font-size: 3em;
+}
+
+#cim {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Press Start 2P", cursive;
+    padding: 10px 0 10px 0;
+}
+
+#handbreak {
+    width: 900px;
+    height: 150px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+}
+
+#speed {
+    padding: 20px 0 20px 0;
+    width: 900px;
+}
+
+.special {
+    width: 150px;
+    height: 150px;
+    background-color: turquoise;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leds {
+    margin-right: 75px;
+}
+
+#horn {
+    margin-left: 75px;
+}
+
+.red {
+    color: red;
+}
+
+@media screen and (max-width: 965px) {
+    body {
+        width: 100%;
+    }
+    .asd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .gomb > p {
+        font-size: 3em;
+        width: 33px;
+        height: 60px;
+    }
+    #handbreak > p {
+        font-size: 2em;
+        width: 100px;
+        height: 45px;
+    }
+    .gomb {
+        width: 100px;
+        height: 100px;
+        background-color: lightseagreen;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #handbreak {
+        width: 300px;
+        height: 75px;
+        background-color: lightseagreen;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cim {
+        width: 100%;
+    }
+
+    #container {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+    }
+
+    #speed {
+        padding: 10px 0 10px 0;
+        width: 300px;
+    }
+
+    .special {
+        width: 50px;
+        height: 50px;
+    }
+
+    .special > p {
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    #leds {
+        margin-right: 25px;
+    }
+
+    #horn {
+        margin-left: 25px;
+    }
+}
