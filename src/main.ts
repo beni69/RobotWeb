@@ -6,6 +6,8 @@ import { Robot } from "@kareszklub/roblib-client";
     const IP = prompt("Robot IP", "localhost")!;
     const robot = await Robot.connect(`ws://${IP}:1111/ws`);
 
+    const DELAY = 50;
+
     let speed = 50,
         moving = false;
 
@@ -111,13 +113,13 @@ import { Robot } from "@kareszklub/roblib-client";
         action.element!.style.backgroundColor =
             (action as any).color || "lightseagreen";
 
-        // stop the robot after 200ms
+        // stop the robot
         setTimeout(() => {
             if (!moving) {
                 (action as any).onStop?.() || robot.stop();
                 console.log("stop");
             }
-        }, 200);
+        }, DELAY);
     };
 
     // MOUSE AND TOUCH CONTROLS
@@ -141,7 +143,7 @@ import { Robot } from "@kareszklub/roblib-client";
                     (a as any).onStop?.() || robot.stop();
                     console.log("stop");
                 }
-            }, 200);
+            }, DELAY);
         };
         a.element!.onmouseup = onUp;
         a.element!.ontouchend = onUp;
