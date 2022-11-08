@@ -4,7 +4,7 @@ import { Robot } from "@kareszklub/roblib-client";
 
 (async () => {
     const IP = prompt("Robot IP", "localhost")!;
-    const robot = await Robot.connect(`ws://${IP}:1111/ws`);
+    const robot = await Robot.connect(`ws://${IP}:1111/ws`, true);
 
     const DELAY = 50;
 

@@ -5,6 +5,7 @@ specifiers:
   '@kareszklub/roblib-client': 2.0.0-beta.2
   typescript: ^4.6.4
   vite: ^3.1.0
+  vite-plugin-wasm: ^3.1.0
 
 dependencies:
   '@fontsource/press-start-2p': 4.5.11
@@ -13,6 +14,7 @@ dependencies:
 devDependencies:
   typescript: 4.8.4
   vite: 3.1.8
+  vite-plugin-wasm: 3.1.0
 
 packages:
 
@@ -42,7 +44,7 @@ packages:
     resolution: {integrity: sha512-3XpMs1ROoay4OEB/hchVWOSWT4NgRQrbwChlsox1r2THy7Pd0b4pUydLR8Q4geSD6XViUyljKNajENVzRMHdKg==}
     engines: {node: '>=14.8'}
     dependencies:
-      ws: 8.9.0
+      ws: 8.11.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -339,6 +341,17 @@ packages:
     hasBin: true
     dev: true
 
+  /vite-plugin-wasm/3.1.0:
+    resolution: {integrity: sha512-RzqOR+zMqqNZOhplq7XM9bkFNfW/Cs1VVj7p+aAdOznCBGwxYLqqzLGxuRwTV31HOGtDGjA8nvgcZG3GwmeVZQ==}
+    dependencies:
+      vite: 3.1.8
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+      - terser
+    dev: true
+
   /vite/3.1.8:
     resolution: {integrity: sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -366,8 +379,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /ws/8.9.0:
-    resolution: {integrity: sha512-Ja7nszREasGaYUYCI2k4lCKIRTt+y7XuqVoHR44YpI49TtryyqbqvDMn5eqfW7e6HzTukDRIsXqzVHScqRcafg==}
+  /ws/8.11.0:
+    resolution: {integrity: sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
