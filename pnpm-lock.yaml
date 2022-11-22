@@ -2,14 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/press-start-2p': ^4.5.11
-  '@kareszklub/roblib-client': 2.0.0-beta.2
+  '@kareszklub/roblib-client': 2.0.0-beta.3
   typescript: ^4.6.4
   vite: ^3.1.0
   vite-plugin-wasm: ^3.1.0
 
 dependencies:
   '@fontsource/press-start-2p': 4.5.11
-  '@kareszklub/roblib-client': 2.0.0-beta.2
+  '@kareszklub/roblib-client': 2.0.0-beta.3
 
 devDependencies:
   typescript: 4.8.4
@@ -40,14 +40,19 @@ packages:
     resolution: {integrity: sha512-wICB8YPvoBi9Ok7s+CxAOljiQ6wqQN/UhrDrB63q9nudYDSOWmvrjFQaXSlj0AN16nAkDjZiaCz6dcKtR0kleg==}
     dev: false
 
-  /@kareszklub/roblib-client/2.0.0-beta.2:
-    resolution: {integrity: sha512-3XpMs1ROoay4OEB/hchVWOSWT4NgRQrbwChlsox1r2THy7Pd0b4pUydLR8Q4geSD6XViUyljKNajENVzRMHdKg==}
+  /@kareszklub/roblib-client/2.0.0-beta.3:
+    resolution: {integrity: sha512-lfqcNws8znkJPEZ8FdD7pE7RRRUduqTinP6/jgq2RmmEhbb9oOW2IhN15Phb5imrHvKRV8csZzCc6mMT4iM6cA==}
     engines: {node: '>=14.8'}
     dependencies:
+      '@kareszklub/roblib-encoder-wasm': 0.1.0
       ws: 8.11.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    dev: false
+
+  /@kareszklub/roblib-encoder-wasm/0.1.0:
+    resolution: {integrity: sha512-XnbFN6VQ6iafvOBF6nLae0hmCf6Tygzv12cHT2CvDhDQ1j1CLJSh1zRJ1MYX/we5txz7Hj6sNz21mNsCdNOOGg==}
     dev: false
 
   /esbuild-android-64/0.15.12:

@@ -15,6 +15,6 @@
     },
     "dependencies": {
         "@fontsource/press-start-2p": "^4.5.11",
-        "@kareszklub/roblib-client": "2.0.0-beta.2"
+        "@kareszklub/roblib-client": "2.0.0-beta.3"
     }
 }
