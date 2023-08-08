@@ -9,12 +9,12 @@
         "preview": "vite preview"
     },
     "devDependencies": {
-        "typescript": "^4.6.4",
-        "vite": "^3.2.7",
-        "vite-plugin-wasm": "^3.1.0"
+        "typescript": "^5.1.6",
+        "vite": "^4.4.9",
+        "vite-plugin-wasm": "^3.2.2"
     },
     "dependencies": {
-        "@fontsource/press-start-2p": "^4.5.11",
-        "@kareszklub/roblib-client": "2.0.0-beta.3"
+        "@fontsource/press-start-2p": "^5.0.8",
+        "@kareszklub/roblib-client": "2.0.0-beta.alpha.6"
     }
 }
