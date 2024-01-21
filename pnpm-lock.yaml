@@ -17,11 +17,11 @@ devDependencies:
     specifier: ^5.1.6
     version: 5.1.6
   vite:
-    specifier: ^4.4.12
-    version: 4.4.12
+    specifier: ^4.5.2
+    version: 4.5.2
   vite-plugin-wasm:
     specifier: ^3.2.2
-    version: 3.2.2(vite@4.4.12)
+    version: 3.2.2(vite@4.5.2)
 
 packages:
 
@@ -314,16 +314,16 @@ packages:
     hasBin: true
     dev: true
 
-  /vite-plugin-wasm@3.2.2(vite@4.4.12):
+  /vite-plugin-wasm@3.2.2(vite@4.5.2):
     resolution: {integrity: sha512-cdbBUNR850AEoMd5nvLmnyeq63CSfoP1ctD/L2vLk/5+wsgAPlAVAzUK5nGKWO/jtehNlrSSHLteN+gFQw7VOA==}
     peerDependencies:
       vite: ^2 || ^3 || ^4
     dependencies:
-      vite: 4.4.12
+      vite: 4.5.2
     dev: true
 
-  /vite@4.4.12:
-    resolution: {integrity: sha512-KtPlUbWfxzGVul8Nut8Gw2Qe8sBzWY+8QVc5SL8iRFnpnrcoCaNlzO40c1R6hPmcdTwIPEDkq0Y9+27a5tVbdQ==}
+  /vite@4.5.2:
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
